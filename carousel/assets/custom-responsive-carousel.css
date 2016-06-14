@@ -1,0 +1,155 @@
+
+.carousel {
+ margin: 10px auto;
+ max-width: 400px;
+ position: relative;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-nav {
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
+}
+.carousel-nav a {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  opacity: .5;
+  padding: .6em;
+  position: absolute;
+  bottom: 20px;
+}
+.carousel-nav a.prev {
+  left: 0;
+}
+.carousel-nav a.next {
+  right: 0;
+}
+.carousel-nav-paginated .carousel-active-page a {
+	background: #333;
+	color: #fff;
+	opacity: .8;
+}
+
+
+/* styled arrows */
+.arrows .carousel-nav {
+  bottom: auto;
+  top: 50%;
+}
+.arrows .carousel-nav a {
+  text-indent: -9999px;
+  width: 2em;
+  height: 2em;
+  background: #fff;
+  opacity: .5;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+.arrows .carousel-nav a:hover,
+.arrows .carousel-nav a:focus {
+  opacity: 1;
+}
+.arrows .carousel-nav a.next {
+  background-image: url(arrow-right.png);
+  right: 1em;
+}
+.arrows .carousel-nav a.prev {
+  background-image: url(arrow-left.png);
+  left: 1em;
+}
+
+
+/* peek */
+.carousel.peek {
+   max-width: 500px;
+}
+.carousel.peek .carousel-item-prev,
+.carousel.peek .carousel-item-next {
+  width: 50%;
+  display: block;
+  opacity: .5;
+  position:  absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-transform: scale(.6) rotate(-15deg);
+  -moz-transform: scale(.6) rotate(-15deg);
+  -o-transform: scale(.6) rotate(-15deg);
+  -ms-transform: scale(.6) rotate(-15deg);
+  transform: scale(.6) rotate(-15deg);
+}
+.carousel.peek .carousel-item-next {
+  right: 0;
+  left: auto;
+  -webkit-transform: scale(.6) rotate(15deg);
+  -moz-transform: scale(.6) rotate(15deg);
+  -opera-transform: scale(.6) rotate(15deg);
+  -ms-transform: scale(.6) rotate(15deg);
+  transform: scale(.6) rotate(15deg);
+}
+.carousel.peek .carousel-active {
+  width: 50%;
+  opacity: 1;
+  position: relative;
+  left: 25%;
+  z-index: 2;
+  box-shadow: .2em .2em .5em #aaa;
+}
+.carousel.peek .carousel-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.carousel.peek .carousel-nav a {
+  width: 20%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+}
+.carousel.peek .carousel-nav a.next {
+  left: auto;
+  right: 0;
+}
+/* Logo */
+.header {
+	background: #247201 url(http://filamentgroup.com/images/headerbg-new.jpg) no-repeat bottom left;
+}
+#fg-logo {
+	text-indent: -9999px;
+	margin: 0 auto;
+	width: 287px;
+	height: 52px;
+	background-image: url(http://filamentgroup.com/images/fg-logo-icon.png);
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5){
+	#fg-logo {
+		background-size: 287px 52px;
+		background-image: url(http://filamentgroup.com/images/fg-logo-icon-lrg.png);
+	}
+}
+
+
+.thumbnail {
+  border: none;  
+  border-radius: 0 !important;
+  padding: 8px;
+  background-color: #f8f8f8;
+}
+
+
+.btn_buy_carousel {
+  margin-bottom: 40px;
+
+}

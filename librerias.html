@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <title>Bootstrap - plantilla tienda</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <link href="css/custom.css" rel="stylesheet">
+      <link rel="stylesheet" href="carousel/src/responsive-carousel.css" media="screen">
+      <link rel="stylesheet" href="carousel/src/responsive-carousel.slide.css" media="screen">
+      <link rel="stylesheet" href="carousel/assets/custom-responsive-carousel.css">
+      <!-- slider top -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script type="text/javascript" src="liquidcarousel/js/jquery.liquidcarousel.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="carousel/src/responsive-carousel.js"></script>
+      <script src="carousel/src/responsive-carousel.touch.js"></script>
+      <script src="carousel/src/responsive-carousel.drag.js"></script>
+      <script src="carousel/src/responsive-carousel.dynamic-containers.js"></script>
+      <script src="carousel/src/responsive-carousel.autoinit.js"></script>
+      <script src="carousel/src/responsive-carousel.autoplay.js"></script>
+      <script src="carousel/src/responsive-carousel.slide.js"></script>
+      <script src="carousel/src/globalenhance.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row valign">
+            <div class="col-xs-12 col-md-6 col-bg-6">
+               <div class="logotipo">
+                  <a href="index.html"><img alt="" src="img/logotipo.gif"></a>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-bg-6">
+               <div>
+                  <form class="navbar-form pd_search" role="search">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar por título, ISBN..." name="srch-term" id="srch-term">
+                        <div class="input-group-btn vertical-align">
+                           <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <nav class="navbar navbar-default">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+               <ul class="nav navbar-nav">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li class="dropdown">
+                     <a href="libros.html" class="dropdown-toggle" data-toggle="dropdown">Libros <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="libros.html">Categoría 01</a></li>
+                        <li><a href="libros.html">Categoría 02</a></li>
+                        <li><a href="libros.html">Categoría 03</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="librerias.html">Librerías</a></li>
+                  <li><a href="prensa.html">Prensa</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container-fluid">
+            <!--aside-->
+            <div class="col-sm-12 col-md-3 col-lg-3 no_mg_left no_mg_right">
+               <div class="panel panel-default">
+                  <div class="panel-body">
+                     <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-th-list">
+                                 </span> Categoría 01</a>
+                              </h4>
+                           </div>
+                           <div id="collapseOne" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                 <table class="table">
+                                    <tr>
+                                       <td><a href="libros.html"> Subcategoría 1 </a>
+                                          <span class="badge badge_categorias pull-right">30</span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td><a href="libros.html"> Subcategoría 2</a>
+                                          <span class="badge badge_categorias pull-right">18</span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td><a href="libros.html"> Subcategoría 3</a>
+                                          <span class="badge badge_categorias pull-right">56</span>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th-list">
+                                 </span> Categoría 02</a>
+                              </h4>
+                           </div>
+                           <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <table class="table">
+                                    <tr>
+                                       <td><a href="libros.html">Subcategoría 02 - 01</a>
+                                          <span class="badge badge_categorias pull-right">22</span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td><a href="libros.html">Subcategoría 02 - 02</a>
+                                          <span class="badge badge_categorias pull-right">39</span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td><a href="libros.html">Subcategoría 02 - 03</a>
+                                          <span class="badge badge_categorias pull-right">11</span>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-th-list">
+                                 </span> Categoría 03</a>
+                              </h4>
+                           </div>
+                           <div id="collapseThree" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <table class="table">
+                                    <tr>
+                                       <td><a href="libros.html">Subcategoría 03 - 01</a>
+                                          <span class="badge badge_categorias pull-right">10</span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td><a href="libros.html">Subcategoría 03 - 02</a>
+                                          <span class="badge badge_categorias pull-right">17</span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td><a href="libros.html">Subcategoría 03 - 03</a>
+                                          <span class="badge badge_categorias pull-right">45</span>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/aside-->
+            <div class="col-sm-12 col-md-9 col-lg-9 content-padding">
+               <h2>Localizador de librerías</h2>
+               <div class="row">
+                  <div class="col-xs-12 col-md-12 col-lg-12 content_home">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12">           
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.14100529606!2d-3.819962705639967!3d40.43786934616099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1465810266994" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 content_home">
+                           <div class="col-md-12">
+                              <h2>Listado de librerías</h2>
+                           </div>
+                           <!-- CAROUSEL de TIENDAS -->
+                           <div class="carousel carousel_tiendas_btns" data-transition="slide"  data-autoplay data-interval="6000">
+                              <!-- TIENDA -->
+                              <div class="slag">
+                                 <div class="thumbnail">
+                                    <a href="detalle_articulo.html"><img src="img/tienda.gif" alt="imagen de tienda" title="imagen de tienda"></a>
+                                    <div class="caption">
+                                       <h4><a href="detalle_articulo.html">Primera tienda</a>
+                                       </h4>
+                                       <p class="mg_tiendas_p">Sed lectus quam, imperdiet vitae nunc ut, tincidunt suscipit sapien. Donec sed turpis non dolor porta ullamcorper.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- TIENDA -->
+                              <div class="slag">
+                                 <div class="thumbnail">
+                                    <a href="detalle_articulo.html"><img src="img/tienda.gif" alt="imagen de tienda" title="imagen de tienda"></a>
+                                    <div class="caption">
+                                       <h4><a href="detalle_articulo.html">Segunda tienda</a>
+                                       </h4>
+                                       <p class="mg_tiendas_p">Sed lectus quam, imperdiet vitae nunc ut, tincidunt suscipit sapien. Donec sed turpis non dolor porta ullamcorper.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- TIENDA -->
+                              <div class="slag">
+                                 <div class="thumbnail">
+                                    <a href="detalle_articulo.html"><img src="img/tienda.gif" alt="imagen de tienda" title="imagen de tienda"></a>
+                                    <div class="caption">
+                                       <h4><a href="detalle_articulo.html">Tercera tienda</a>
+                                       </h4>
+                                       <p class="mg_tiendas_p">Sed lectus quam, imperdiet vitae nunc ut, tincidunt suscipit sapien. Donec sed turpis non dolor porta ullamcorper.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="slag">
+                                 <div class="thumbnail">
+                                    <a href="detalle_articulo.html"><img src="img/tienda.gif" alt="imagen de tienda" title="imagen de tienda"></a>
+                                    <div class="caption">
+                                       <h4><a href="detalle_articulo.html">Cuarta tienda</a>
+                                       </h4>
+                                       <p class="mg_tiendas_p">Sed lectus quam, imperdiet vitae nunc ut, tincidunt suscipit sapien. Donec sed turpis non dolor porta ullamcorper.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- TIENDA -->
+                              <div class="slag">
+                                 <div class="thumbnail">
+                                    <a href="detalle_articulo.html"><img src="img/tienda.gif" alt="imagen de tienda" title="imagen de tienda"></a>
+                                    <div class="caption">
+                                       <h4><a href="detalle_articulo.html">Quinta tienda</a>
+                                       </h4>
+                                       <p class="mg_tiendas_p">Sed lectus quam, imperdiet vitae nunc ut, tincidunt suscipit sapien. Donec sed turpis non dolor porta ullamcorper.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- TIENDA -->
+                              <div class="slag">
+                                 <div class="thumbnail">
+                                    <a href="detalle_articulo.html"><img src="img/tienda.gif" alt="imagen de tienda" title="imagen de tienda"></a>
+                                    <div class="caption">
+                                       <h4><a href="detalle_articulo.html">Sexta tienda</a>
+                                       </h4>
+                                       <p class="mg_tiendas_p">Sed lectus quam, imperdiet vitae nunc ut, tincidunt suscipit sapien. Donec sed turpis non dolor porta ullamcorper.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- CAROUSEL TIENDAS -->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- tiendas -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer-basic-centered">
+         <p class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="libros.html">Libros</a>
+            <a href="librerias.html">Librerías</a>
+            <a href="prensa.html">Prensa</a>
+            <a href="contacto.html">Contacto</a>
+         </p>
+         <p class="footer-company-name">Tienda © 2016</p>
+      </footer>
+   </body>
+</html>
